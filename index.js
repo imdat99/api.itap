@@ -38,4 +38,4 @@ app.use('/api/card', card)
 connectDB();
 const port = process.env.PORT || 5000;
 
-app.listen(port, () => console.log(`run on port ${port}`));
+app.listen(port, () => console.log(`run on port ${port} | ${process.env.DB_USERNAME}`));
