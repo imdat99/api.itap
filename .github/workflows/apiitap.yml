@@ -28,3 +28,7 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm start
+    env:
+        DB_USERNAME: ${{ secrets.DB_USERNAME }}
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        ACCESTOKEN_TOKEN_SECRET: ${{ secrets.ACCESTOKEN_TOKEN_SECRET }}
